@@ -94,7 +94,7 @@ describe "Magazine App" do
 
       page.find(:css, "[type=submit]").click
       expect(Article.all.count).to eq(2)
-      expect(Article.last.title).to eq("Second Article!!")
+      expect(Article.last.title).to eq("second article")
     end
 
     it "redirects to '/articles/:id'" do
